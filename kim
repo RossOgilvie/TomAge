@@ -1,10 +1,10 @@
 <html>
 <head>
 <script>
-var tomDOB = "November 5, 1989 11:13:00"
+var kimDOB = "November 11, 1991 11:13:00"
 
 function calcAge() {
-  var birthday = +new Date(tomDOB);
+  var birthday = +new Date(kimDOB);
   var t = (Date.now() - birthday) / (31557600000);
   document.getElementById('age').innerHTML = t;
   // var auto_refresh = setInterval("calcAge()", 5000);
@@ -17,9 +17,9 @@ function calcAge() {
 <!-- <body> -->
 <body onload="calcAge()">
 <div align="center">
-    Tom is <div id="age"></div> years old.
+    Kim is <div id="age"></div> years old.
     <br/>
-    <img src="tom.jpg" />
+    <img src="kim.jpg" />
 </div>
 </body>
 </html>
