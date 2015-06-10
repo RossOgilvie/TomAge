@@ -1,0 +1,25 @@
+<html>
+<head>
+<script>
+var tomDOB = "November 5, 1989 11:13:00"
+
+function calcAge() {
+  var birthday = +new Date(tomDOB);
+  var t = (Date.now() - birthday) / (31557600000);
+  document.getElementById('age').innerHTML = t;
+  var auto_refresh = setInterval("calcAge()", 5000);
+}
+
+
+</script>
+</script>
+</head>
+<!-- <body> -->
+<body onload="calcAge()">
+<div align="center">
+    Tom is <div id="age"></div> years old.
+    <br/>
+    <img src="tom.jpg" />
+</div>
+</body>
+</html>
